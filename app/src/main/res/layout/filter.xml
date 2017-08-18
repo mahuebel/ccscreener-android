@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/minimum_profit"
+        android:textSize="@dimen/text_label_dimen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <SeekBar
+        android:id="@+id/profit_slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:max="20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label1" />
+
+    <TextView
+        android:id="@+id/dialog_profit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profit_slider" />
+
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/minimum_probability"
+        android:textSize="@dimen/text_label_dimen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_profit_label" />
+
+
+    <SeekBar
+        android:id="@+id/probability_slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:max="75"
+        android:min="25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label2" />
+
+    <TextView
+        android:id="@+id/dialog_probability_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/probability_slider" />
+
+</android.support.constraint.ConstraintLayout>

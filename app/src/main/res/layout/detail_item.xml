@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/volatility_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/implied_volatility"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_label_dimen"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/volatility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/volatility_label"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/strike_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/strike"
+            android:textSize="@dimen/text_label_dimen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame" />
+
+        <TextView
+            android:id="@+id/ask_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ask"
+            android:textSize="@dimen/text_label_dimen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/strike_label" />
+
+        <TextView
+            android:id="@+id/premium_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/premium"
+            android:textSize="@dimen/text_label_dimen"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/strike_label" />
+
+
+        <TextView
+            android:id="@+id/strike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/strike_label" />
+
+        <TextView
+            android:id="@+id/ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ask_label" />
+
+        <TextView
+            android:id="@+id/premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/premium_label" />
+
+        <ImageView
+            android:id="@+id/profit_icon"
+            app:layout_constraintTop_toBottomOf="@id/strike"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/profit_icon"
+            app:layout_constraintBottom_toBottomOf="@id/profit_icon"
+            app:layout_constraintLeft_toRightOf="@id/profit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/profitability_label"
+                android:text="@string/profit_potential"
+                android:textSize="@dimen/text_label_dimen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/profitability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/probability_icon"
+            app:layout_constraintTop_toBottomOf="@id/profit_icon"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/probability_icon"
+            app:layout_constraintBottom_toBottomOf="@id/probability_icon"
+            app:layout_constraintLeft_toRightOf="@id/probability_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/probability_label"
+                android:textSize="@dimen/text_label_dimen"
+                android:text="@string/profit_probability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/probability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

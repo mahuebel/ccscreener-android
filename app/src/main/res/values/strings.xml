@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CC Screener</string>
+    <string name="stock_item_profit" formatted="false">Profitiability: %1$d\% to %2$d\%</string>
+    <string name="stock_item_probability" formatted="false">Profit Probability: %d\%</string>
+    <string name="item_probability">Profit Probability:</string>
+    <string name="item_profit">Profitability:</string>
+
+    <string name="frame_itm" formatted="false">%1$s In the Money</string>
+    <string name="frame_otm" formatted="false">%1$s Outside the Money</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_frame">Frame</string>
+    <string name="minimum_profit">Minimum Profit</string>
+    <string name="minimum_probability">Minimum Probability</string>
+    <string name="implied_volatility">Impl. Vol.</string>
+    <string name="strike">Strike</string>
+    <string name="ask">Ask</string>
+    <string name="premium">Premium</string>
+    <string name="profit_potential">Profit Potential</string>
+    <string name="profit_probability">Profit Probability</string>
+
+</resources>
